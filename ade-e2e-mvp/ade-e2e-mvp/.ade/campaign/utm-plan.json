@@ -1,0 +1,23 @@
+[
+  {
+    "channel": "linkedin",
+    "source": "linkedin",
+    "medium": "cpc",
+    "campaign": "q2-pipeline-sprint",
+    "content": "q2-pipeline-sprint-1"
+  },
+  {
+    "channel": "google-search",
+    "source": "google",
+    "medium": "cpc",
+    "campaign": "q2-pipeline-sprint",
+    "content": "q2-pipeline-sprint-2"
+  },
+  {
+    "channel": "email",
+    "source": "email",
+    "medium": "email",
+    "campaign": "q2-pipeline-sprint",
+    "content": "q2-pipeline-sprint-3"
+  }
+]

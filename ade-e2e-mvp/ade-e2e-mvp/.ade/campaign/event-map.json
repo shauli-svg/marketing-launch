@@ -1,0 +1,30 @@
+[
+  {
+    "event": "lp_view",
+    "trigger": "page load",
+    "payload": [
+      "campaign_id",
+      "page_variant",
+      "audience"
+    ]
+  },
+  {
+    "event": "cta_click",
+    "trigger": "click on primary CTA: Book a launch review",
+    "payload": [
+      "campaign_id",
+      "cta_text",
+      "page_variant"
+    ]
+  },
+  {
+    "event": "form_submit",
+    "trigger": "submit lead form",
+    "payload": [
+      "campaign_id",
+      "offer",
+      "channel",
+      "form_id"
+    ]
+  }
+]
