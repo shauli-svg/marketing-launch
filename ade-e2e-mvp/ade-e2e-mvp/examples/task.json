@@ -1,0 +1,16 @@
+{
+  "id": "task-001",
+  "title": "Add server-side validation for email update form",
+  "description": "Ensure the update-email route rejects invalid emails and that the existing validation utility is reused.",
+  "acceptanceCriteria": [
+    "The server route rejects invalid email values.",
+    "Validation logic is reused instead of duplicated.",
+    "There is test coverage for the invalid email case."
+  ],
+  "constraints": [
+    "Do not change deployment or auth configuration.",
+    "Keep the change scoped to the email update flow."
+  ],
+  "maxFilesToEdit": 5,
+  "requiresHumanApproval": false
+}

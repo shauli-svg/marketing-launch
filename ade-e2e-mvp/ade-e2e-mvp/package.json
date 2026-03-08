@@ -1,0 +1,19 @@
+{
+  "name": "ade-e2e-mvp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "run:sample": "tsx apps/control-plane/src/cli.ts --task examples/task.json --repo examples/repos/demo-app --journal .ade/journal.json",
+    "run:campaign-sample": "tsx apps/control-plane/src/campaign-cli.ts --brief examples/campaign-brief.json --repo examples/repos/marketing-site --output .ade/campaign"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

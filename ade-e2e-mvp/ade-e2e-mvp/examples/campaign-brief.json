@@ -1,0 +1,16 @@
+{
+  "id": "campaign-001",
+  "name": "Q2 Pipeline Sprint",
+  "product": "ADE Launch Studio",
+  "audience": "B2B growth teams",
+  "offer": "a campaign launch pack in one working day",
+  "tone": "expert",
+  "channels": ["linkedin", "google-search", "email"],
+  "primaryCta": "Book a launch review",
+  "landingPagePath": "src/pages/launch.tsx",
+  "successMetric": "qualified meetings booked",
+  "constraints": [
+    "Keep the page focused on a single CTA.",
+    "Do not introduce new infrastructure or auth changes."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022"
+    ],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ade/domain": [
+        "packages/domain/src/index.ts"
+      ],
+      "@ade/repo-mapper": [
+        "packages/repo-mapper/src/index.ts"
+      ],
+      "@ade/context-builder": [
+        "packages/context-builder/src/index.ts"
+      ],
+      "@ade/planner": [
+        "packages/planner/src/index.ts"
+      ],
+      "@ade/executor": [
+        "packages/executor/src/index.ts"
+      ],
+      "@ade/verifier": [
+        "packages/verifier/src/index.ts"
+      ],
+      "@ade/policy": [
+        "packages/policy/src/index.ts"
+      ],
+      "@ade/journal": [
+        "packages/journal/src/index.ts"
+      ],
+      "@ade/artifact-writer": [
+        "packages/artifact-writer/src/index.ts"
+      ],
+      "@ade/orchestrator": [
+        "packages/orchestrator/src/index.ts"
+      ],
+      "@ade/campaign-launch-pack": [
+        "packages/campaign-launch-pack/src/index.ts"
+      ]
+    },
+    "outDir": "dist"
+  },
+  "include": [
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "packages/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "demo-app",
+  "private": true,
+  "scripts": {
+    "lint": "echo lint-ok",
+    "test": "echo test-ok",
+    "build": "echo build-ok"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
+  }
+}
