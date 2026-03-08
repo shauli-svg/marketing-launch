@@ -1,0 +1,93 @@
+{
+  "brief": {
+    "id": "campaign-001",
+    "name": "Q2 Pipeline Sprint",
+    "product": "ADE Launch Studio",
+    "audience": "B2B growth teams",
+    "offer": "a campaign launch pack in one working day",
+    "tone": "expert",
+    "channels": [
+      "linkedin",
+      "google-search",
+      "email"
+    ],
+    "primaryCta": "Book a launch review",
+    "landingPagePath": "src/pages/launch.tsx",
+    "successMetric": "qualified meetings booked",
+    "constraints": [
+      "Keep the page focused on a single CTA.",
+      "Do not introduce new infrastructure or auth changes."
+    ]
+  },
+  "workingSet": [
+    "package.json",
+    "src/components/Hero.tsx",
+    "src/components/LeadForm.tsx",
+    "src/lib/analytics.ts",
+    "src/pages/launch.tsx"
+  ],
+  "pagePatchPlan": {
+    "targetFiles": [
+      "src/components/Hero.tsx",
+      "src/components/LeadForm.tsx",
+      "src/pages/launch.tsx"
+    ],
+    "rationale": "Prioritize landing surface, CTA, and tracking for B2B growth teams with offer \"a campaign launch pack in one working day\".",
+    "ctaSelectorHint": "[data-cta=\"primary\"], button[type=\"submit\"], a[href*=\"demo\"]",
+    "formSelectorHint": "[data-form], form"
+  },
+  "utmPlan": [
+    {
+      "channel": "linkedin",
+      "source": "linkedin",
+      "medium": "cpc",
+      "campaign": "q2-pipeline-sprint",
+      "content": "q2-pipeline-sprint-1"
+    },
+    {
+      "channel": "google-search",
+      "source": "google",
+      "medium": "cpc",
+      "campaign": "q2-pipeline-sprint",
+      "content": "q2-pipeline-sprint-2"
+    },
+    {
+      "channel": "email",
+      "source": "email",
+      "medium": "email",
+      "campaign": "q2-pipeline-sprint",
+      "content": "q2-pipeline-sprint-3"
+    }
+  ],
+  "eventMap": [
+    {
+      "event": "lp_view",
+      "trigger": "page load",
+      "payload": [
+        "campaign_id",
+        "page_variant",
+        "audience"
+      ]
+    },
+    {
+      "event": "cta_click",
+      "trigger": "click on primary CTA: Book a launch review",
+      "payload": [
+        "campaign_id",
+        "cta_text",
+        "page_variant"
+      ]
+    },
+    {
+      "event": "form_submit",
+      "trigger": "submit lead form",
+      "payload": [
+        "campaign_id",
+        "offer",
+        "channel",
+        "form_id"
+      ]
+    }
+  ],
+  "summary": "Launch pack for Q2 Pipeline Sprint with 6 assets across 3 channels."
+}
